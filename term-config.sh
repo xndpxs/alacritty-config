@@ -15,6 +15,8 @@ install_if_not_exists() {
 install_if_not_exists alacritty
 install_if_not_exists fish
 install_if_not_exists zellij
+install_if_not_exists fastfetch
+install_if_not_exists starship
 
 # Crear directorios de configuración
 echo "Creando directorios de configuración..."
@@ -29,7 +31,7 @@ git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/theme
 
 # Copiar archivos de configuración
 echo "Copiando archivos de configuración..."
-cp alacritty.yml ~/.config/alacritty/alacritty.yml
+cp alacritty.toml ~/.config/alacritty/alacritty.toml
 cp config.fish ~/.config/fish/config.fish
 
 echo "Configuración completada."
