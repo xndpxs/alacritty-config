@@ -1,8 +1,1 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-    fastfetch
-end
-
-starship init fish | source
-
-
+/home/andres/.config/fish/config.fish
